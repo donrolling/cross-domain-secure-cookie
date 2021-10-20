@@ -25,13 +25,15 @@ Use Bash for Windows - this should have come with your Git install
 
 Reference: https://devcenter.heroku.com/articles/ssl-certificate-self
 
-#### Certificate authority (CA)
-
 openssl genrsa -aes256 -passout pass:gsahdg -out server.pass.key 4096
 openssl rsa -passin pass:gsahdg -in server.pass.key -out server.key
 rm server.pass.key
 openssl req -new -key server.key -out server.csr
 openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
+
+#### Install certificate on your machine
+
+Windows Explorer: right-click the certificate/server.crt file and select "install certificate"
 
 ## Code scaffolding
 
