@@ -35,6 +35,12 @@ openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out serv
 
 Windows Explorer: right-click the certificate/server.crt file and select "install certificate"
 
+https://user-images.githubusercontent.com/1778167/138150756-7ee61171-d278-47bf-8031-70d1acd9ed54.jpg
+
+https://user-images.githubusercontent.com/1778167/138151437-73adef9b-a1f8-4042-933d-6979ad8bedc2.jpg
+
+https://user-images.githubusercontent.com/1778167/138151450-44def812-1109-4c83-87d0-d1c03b7fbe5f.jpg
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
